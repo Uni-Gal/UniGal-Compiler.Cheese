@@ -8,6 +8,8 @@ Complier and official Interpreter of UniGal-Script
 
 流程图标准请点击[此处](https://github.com/Uni-Gal/UniGal-Diagram)
 
+流程图的渲染器暂不独立出来，若有需要，会和Complier，Interpreter一并作为Tools
+
 ## 编译器 Complier
 
 UniGal是作为一门中间语言出现的，用来作为交换标准
