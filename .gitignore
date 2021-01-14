@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Pugixml
+*pugiconfig.hpp
+*pugixml.cpp
+*pugixml.hpp
