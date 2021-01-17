@@ -1,7 +1,7 @@
-#include <iostream>
+﻿#include <iostream>
 #include <fstream>
 #include <algorithm>
-#include "pugixml.hpp"
+#include "pugixml.hpp" //  建议装个vcpkg
 
 using namespace std;
 
@@ -21,9 +21,9 @@ int main(void)
 
 	pugi::xml_document unigal;
 	pugi::xml_parse_result result = unigal.load_file("Simple.unigal");
-	string src = FormatString(unigal.select_single_node("/unigal-script/head/src/text()").node().value());
-	string dst = FormatString(unigal.select_single_node("/unigal-script/head/dst/text()").node().value());
-	string ver = FormatString(unigal.select_single_node("/unigal-script/head/ver/text()").node().value());
+	string src = FormatString(unigal.select_node("/unigal-script/head/src/text()").node().value());
+	string dst = FormatString(unigal.select_node("/unigal-script/head/dst/text()").node().value());
+	string ver = FormatString(unigal.select_node("/unigal-script/head/ver/text()").node().value());
 	cout << "[src=" << src << "]" << endl;
 	cout << "[dst=" << dst << "]" << endl;
 	cout << "[ver=" << ver << "]" << endl;
@@ -55,7 +55,7 @@ int main(void)
 		{
 			iterator += 1;
 			char xpath[250];
-			sprintf(xpath, "%s%d%s", "/unigal-script/body/*[", iterator, "]");
+			snprintf(xpath, 250, "%s%d%s", "/unigal-script/body/*[", iterator, "]");
 #ifdef _DEBUG
 			cout << "[" << iterator << "]" << xpath << endl;
 #endif // DEBUG
