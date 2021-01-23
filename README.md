@@ -1,14 +1,12 @@
-# UniGal-Complier-Interpreter
+# UniGal-Complier
 
-本仓库为UniGal-Script的编译器和解释器
+本仓库为UniGal-Script的编译器
 
-Complier and official Interpreter of UniGal-Script
+Official Complier of UniGal-Script
 
 语言标准请点击[此处](https://github.com/Uni-Gal/UniGal-Script)
 
 流程图标准请点击[此处](https://github.com/Uni-Gal/UniGal-Diagram)
-
-流程图的渲染器暂不独立出来，若有需要，会和Complier，Interpreter一并作为Tools
 
 ## 编译器 Complier
 
@@ -23,14 +21,6 @@ A---(A_2_Unigal_Complier)--->Unigal---(Unigal_2_B_Complier)--->B
 ```
 
 在第二次编译后获得了目标语言B语言的脚本。之后您可以用B引擎来编译/解释B语言的脚本文件
-
-## 解释器 Interpreter
-
-出于更好的阐述UniGal-Script的工作原理的思想，为了让人更好的明白它对应的效果是什么，防止对同一个实验性标准的不同的非官方实现出现类似Web前端一样的混战，我们特别设计了官方的解释器，作为它的一种实现。这样至少它便不是一个死的标准。
-
-**注意！这不意味着解释器是一个游戏引擎（或Chrome一样的垄断性行业标准），它没有游戏引擎所需要具备的诸多功能，它仅能用于正确且完整的实现标准的所有功能。**
-
-其他引擎作者对Unigal的原生支持，也相当于是Unigal的解释器，但是是根据引擎特色定制的解释器。
 
 ## 原生支持不需要编译器的列表
 
