@@ -156,6 +156,10 @@ int main(void)
 			{
 				;
 			}
+		    else if (type == "resource")
+			{
+				//好了，可以开始判断attribute了
+			}
 			else
 			{
 				;
