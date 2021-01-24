@@ -1,7 +1,8 @@
 ﻿#include <iostream>
 #include <fstream>
+#include <string>
 #include <algorithm>
-#include "pugixml.hpp" //  建议装个vcpkg
+#include "../Head/pugixml.hpp" //  建议装个vcpkg
 
 using namespace std;
 
@@ -108,6 +109,7 @@ int main(void)
 				string codetype = unigal.select_node(xpath).node().first_child().name();
 				if (codetype == "action")
 				{
+					cout << "[code action type= " << unigal.select_node(xpath).node().first_child().first_child().name() << " ]" << endl;
 					string code_actiontype = unigal.select_node(xpath).node().first_child().first_child().name();
 					if (code_actiontype == "newline")
 					{
@@ -136,7 +138,10 @@ int main(void)
 					{
 						cout << "[action= waitclick ]" << endl;
 					}
-					else{;//这时候就可以给UEP-E-0005了，因为是未定义的函数}
+					else
+					{
+						;//这时候就可以给UEP-E-0005了，因为是未定义的函数
+					}
 				}
 				else if (codetype == "resource")
 				{
@@ -150,7 +155,10 @@ int main(void)
 				{
 					;
 				}
-				else{;//这时候就可以给UEP-E-0005了，因为是未定义的函数}
+				else
+				{
+					;//这时候就可以给UEP-E-0005了，因为是未定义的函数
+				}
 			}
 			else if (type == "struct")
 			{
