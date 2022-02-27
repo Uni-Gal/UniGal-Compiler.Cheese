@@ -1,12 +1,8 @@
-# UniGal-Complier
+# UniGal-Compiler.Cheese
 
-本仓库为UniGal-Script的编译器
+本仓库为UniGal-Script的一个停止维护的编译器。
 
-Official Complier of UniGal-Script
-
-语言标准请点击[此处](https://github.com/Uni-Gal/UniGal-Script)
-
-流程图标准请点击[此处](https://github.com/Uni-Gal/UniGal-Diagram)
+本项目支持v0.0.2版本UniGal-Script
 
 ## 编译器 Complier
 
@@ -25,6 +21,10 @@ A---(A_2_Unigal_Complier)--->Unigal---(Unigal_2_B_Complier)--->B
 ## 原生支持不需要编译器的列表
 
 暂无语言能原生支持导入UniGal，故所有语言都需要两次编译
+
+## 语言兼容方式
+
+设计一个NxM的矩阵，N为特性数目，M为语言，然后对应的点存储支持程度信息，是按照定义写出，还是按照UEP给警告，还是报错。
 
 ## 本工程
 
