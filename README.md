@@ -2,7 +2,7 @@
 
 本仓库为UniGal-Script的一个停止维护的编译器。
 
-本项目支持v0.0.2版本UniGal-Script
+本项目支持至UniGal-Script的[0.0.2](https://github.com/Uni-Gal/UniGal-Script/releases/tag/0.0.2)版本。
 
 ## 编译器 Complier
 
